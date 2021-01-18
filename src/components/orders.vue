@@ -9,7 +9,7 @@
       <div
         class="d-flex flex-column flex-lg-row justify-content-between w-100 align-items-sm-center"
       >
-        <p class="fs-20 mb-0 font-weight-bold">{{this.heading}}</p>
+        <p class="fs-20 mb-0 font-weight-bold">{{ this.heading }}</p>
         <div class="d-flex flex-column flex-lg-row mt-3 mt-lg-0">
           <div class="d-flex flex-column flex-lg-row rounded-lg p-0">
             <div
@@ -193,7 +193,7 @@
           <tbody>
             <tr class="border-bottom">
               <th
-                class="d-flex justify-content-center align-items-center  mt-md-0 py-lg-15"
+                class="d-flex justify-content-center align-items-center mt-md-0 py-lg-15"
               >
                 <CustomAlert
                   v-bind:alert="200"
@@ -317,9 +317,7 @@
               </td>
             </tr>
             <tr class="border-bottom">
-              <th
-                class="d-flex justify-content-center align-items-center mt-1"
-              >
+              <th class="d-flex justify-content-center align-items-center mt-1">
                 <CustomAlert
                   v-bind:alert="200"
                   v-bind:type="`${$t('waitingBtn')}`"
@@ -380,9 +378,7 @@
               </td>
             </tr>
             <tr class="border-bottom">
-              <th
-                class="d-flex justify-content-center align-items-center mt-1"
-              >
+              <th class="d-flex justify-content-center align-items-center mt-1">
                 <CustomAlert
                   v-bind:alert="200"
                   v-bind:type="`${$t('canceledBtn')}`"
@@ -443,9 +439,7 @@
               </td>
             </tr>
             <tr class="border-bottom">
-              <th
-                class="d-flex justify-content-center align-items-center mt-1"
-              >
+              <th class="d-flex justify-content-center align-items-center mt-1">
                 <CustomAlert
                   v-bind:alert="200"
                   v-bind:type="`${$t('inProgressBtn')}`"
@@ -589,11 +583,11 @@ export default {
       buttons: ["inprogress", "done", "cancel", "waiting"],
     };
   },
-   props: {
+  props: {
     heading: {
       type: String,
-    }
-   },
+    },
+  },
   methods: {
     deselectAll() {
       this.checkbox1 = false;
@@ -618,12 +612,12 @@ export default {
 };
 </script>
 <style>
-@media (min-width:992px){
-  .width-117{
-    width:117px;
+@media (min-width: 992px) {
+  .width-117 {
+    width: 117px;
   }
-  .width-145{
-    width:145px;
+  .width-145 {
+    width: 145px;
   }
 }
 .btn-select-table {

@@ -246,41 +246,17 @@
                       </div>
 
                       <button
-                        class="delete-btn ml-2 outline-none rounded-circle d-flex justify-content-center align-items-center"
+                        class="px-2 outline-none"
                         @click="deleteHandler(index)"
                       >
-                        <svg
-                          width="9"
-                          height="9"
-                          viewBox="0 0 9 9"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M0.76001 2.12012H1.51557H7.56001"
-                            stroke="white"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M2.60572 2.25601V1.50801C2.60572 1.30963 2.68759 1.11937 2.83334 0.979094C2.97908 0.838817 3.17675 0.76001 3.38286 0.76001H4.93715C5.14326 0.76001 5.34093 0.838817 5.48667 0.979094C5.63241 1.11937 5.71429 1.30963 5.71429 1.50801V2.25601M6.88 2.25601V7.49201C6.88 7.69039 6.79813 7.88065 6.65238 8.02093C6.50664 8.1612 6.30897 8.24001 6.10286 8.24001H2.21715C2.01103 8.24001 1.81336 8.1612 1.66762 8.02093C1.52188 7.88065 1.44 7.69039 1.44 7.49201V2.25601H6.88Z"
-                            stroke="white"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M3.47998 4.15991V6.19991"
-                            stroke="white"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M4.84003 4.15991V6.19991"
-                            stroke="white"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="8.5" cy="8.5" r="8.5" fill="#FF3737"/>
+<path d="M4.76001 6.12012H5.51557H11.56" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.60572 6.25601V5.50801C6.60572 5.30963 6.68759 5.11937 6.83334 4.97909C6.97908 4.83882 7.17675 4.76001 7.38286 4.76001H8.93715C9.14326 4.76001 9.34093 4.83882 9.48667 4.97909C9.63241 5.11937 9.71429 5.30963 9.71429 5.50801V6.25601M10.88 6.25601V11.492C10.88 11.6904 10.7981 11.8806 10.6524 12.0209C10.5066 12.1612 10.309 12.24 10.1029 12.24H6.21715C6.01103 12.24 5.81336 12.1612 5.66762 12.0209C5.52188 11.8806 5.44 11.6904 5.44 11.492V6.25601H10.88Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.47998 8.15991V10.1999" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.84003 8.15991V10.1999" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
                       </button>
                     </div>
                     <div
@@ -345,41 +321,17 @@
                       </div>
 
                       <button
-                        class="delete-btn ml-2 outline-none rounded-circle d-flex justify-content-center align-items-center"
+                        class="px-2 outline-none"
                         @click="deleteHandler(index)"
                       >
-                        <svg
-                          width="9"
-                          height="9"
-                          viewBox="0 0 9 9"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M0.76001 2.12012H1.51557H7.56001"
-                            stroke="white"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M2.60572 2.25601V1.50801C2.60572 1.30963 2.68759 1.11937 2.83334 0.979094C2.97908 0.838817 3.17675 0.76001 3.38286 0.76001H4.93715C5.14326 0.76001 5.34093 0.838817 5.48667 0.979094C5.63241 1.11937 5.71429 1.30963 5.71429 1.50801V2.25601M6.88 2.25601V7.49201C6.88 7.69039 6.79813 7.88065 6.65238 8.02093C6.50664 8.1612 6.30897 8.24001 6.10286 8.24001H2.21715C2.01103 8.24001 1.81336 8.1612 1.66762 8.02093C1.52188 7.88065 1.44 7.69039 1.44 7.49201V2.25601H6.88Z"
-                            stroke="white"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M3.47998 4.15991V6.19991"
-                            stroke="white"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M4.84003 4.15991V6.19991"
-                            stroke="white"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="8.5" cy="8.5" r="8.5" fill="#FF3737"/>
+<path d="M4.76001 6.12012H5.51557H11.56" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.60572 6.25601V5.50801C6.60572 5.30963 6.68759 5.11937 6.83334 4.97909C6.97908 4.83882 7.17675 4.76001 7.38286 4.76001H8.93715C9.14326 4.76001 9.34093 4.83882 9.48667 4.97909C9.63241 5.11937 9.71429 5.30963 9.71429 5.50801V6.25601M10.88 6.25601V11.492C10.88 11.6904 10.7981 11.8806 10.6524 12.0209C10.5066 12.1612 10.309 12.24 10.1029 12.24H6.21715C6.01103 12.24 5.81336 12.1612 5.66762 12.0209C5.52188 11.8806 5.44 11.6904 5.44 11.492V6.25601H10.88Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.47998 8.15991V10.1999" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.84003 8.15991V10.1999" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
                       </button>
                     </div>
                   </div>
