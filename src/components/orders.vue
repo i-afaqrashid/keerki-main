@@ -160,7 +160,7 @@
       </div>
       <div class="mt-4">
         <table
-          class="table table-responsive-sm table-borderless text-center table-hover"
+          class="table table-responsive-md table-borderless text-center table-hover"
         >
           <thead class="border-top border-bottom">
             <tr>
@@ -193,7 +193,7 @@
           <tbody>
             <tr class="border-bottom">
               <th
-                class="d-flex justify-content-center align-items-center mt-3 mt-sm-2 mt-md-0 py-lg-15"
+                class="d-flex justify-content-center align-items-center  mt-md-0 py-lg-15"
               >
                 <CustomAlert
                   v-bind:alert="200"
@@ -255,7 +255,7 @@
             </tr>
             <tr class="border-bottom">
               <th
-                class="d-flex justify-content-center align-items-center mt-3 mt-sm-2 mt-md-0 py-15"
+                class="d-flex justify-content-center align-items-center mt-1 py-lg-15"
               >
                 <CustomAlert
                   v-bind:alert="200"
@@ -318,7 +318,7 @@
             </tr>
             <tr class="border-bottom">
               <th
-                class="d-flex justify-content-center align-items-center mt-3 mt-sm-2 mt-md-0"
+                class="d-flex justify-content-center align-items-center mt-1"
               >
                 <CustomAlert
                   v-bind:alert="200"
@@ -381,7 +381,7 @@
             </tr>
             <tr class="border-bottom">
               <th
-                class="d-flex justify-content-center align-items-center mt-3 mt-sm-2 mt-md-0"
+                class="d-flex justify-content-center align-items-center mt-1"
               >
                 <CustomAlert
                   v-bind:alert="200"
@@ -444,7 +444,7 @@
             </tr>
             <tr class="border-bottom">
               <th
-                class="d-flex justify-content-center align-items-center mt-3 mt-sm-2 mt-md-0"
+                class="d-flex justify-content-center align-items-center mt-1"
               >
                 <CustomAlert
                   v-bind:alert="200"
