@@ -13,7 +13,7 @@
         <div class="d-flex flex-column flex-lg-row mt-3 mt-lg-0">
           <div class="d-flex flex-column flex-lg-row rounded-lg p-0">
             <div
-              class="btn outline-none d-flex align-items-center justify-content-center border border-right-0 px-2 py-1 color-f5"
+              class="btn outline-none d-flex align-items-center justify-content-center border border-right-0 px-2 py-1 color-f5 ml-0"
             >
               <div class="border-0 outline-none color-f5">
                 <svg
