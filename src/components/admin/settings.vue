@@ -328,16 +328,23 @@
                       <div class="w-100 pt-15">
                         <p class="mb-1">{{ $t("adminSettingsWorkPhone") }}</p>
                         <div
-                          class="d-flex w-100 justify-content-center align-items-center"
+                          class="d-flex w-100 justify-content-center border-dede align-items-center"
                         >
-                          <select
-                            class="color-f5 p-2 border-dede outline-none select-arrow"
+                          <b-dropdown
+                            :text="selectedCode"
+                            toggle-class="border-left-0 border-top-0 border-bottom-0 border-right color-f5 p-2 outline-none select-arrow"
+                            menu-class="h-select-200"
                           >
-                            <option>+86</option>
-                            <option>+971</option>
-                          </select>
+                            <b-dropdown-item
+                              href="#"
+                              v-for="(options, index) in countryCodes"
+                              :key="options.value"
+                              @click="(e) => itemSelected(e, index)"
+                              >{{ options.text }}</b-dropdown-item
+                            >
+                          </b-dropdown>
                           <input
-                            class="settings-input w-100 px-1 outline-none"
+                            class="settings-input border-0 w-100 px-1 outline-none"
                             :placeholder="`${$t('adminSettingsEnterPhone')}`"
                             type="number"
                           />
@@ -673,16 +680,23 @@
                           {{ $t("adminSettingsEditEmployeeWorkPone") }}
                         </p>
                         <div
-                          class="d-flex w-100 justify-content-center align-items-center"
+                          class="d-flex w-100 justify-content-center border-dede align-items-center"
                         >
-                          <select
-                            class="color-f5 p-2 border-dede outline-none select-arrow"
+                          <b-dropdown
+                            :text="selectedCode"
+                            toggle-class="border-left-0 border-top-0 border-bottom-0 border-right color-f5 p-2 outline-none select-arrow"
+                            menu-class="h-select-200"
                           >
-                            <option>+86</option>
-                            <option>+971</option>
-                          </select>
+                            <b-dropdown-item
+                              href="#"
+                              v-for="(options, index) in countryCodes"
+                              :key="options.value"
+                              @click="(e) => itemSelected(e, index)"
+                              >{{ options.text }}</b-dropdown-item
+                            >
+                          </b-dropdown>
                           <input
-                            class="settings-input w-100 px-1 outline-none"
+                            class="settings-input w-100 px-1 border-0 outline-none"
                             :placeholder="`${$t(
                               'adminSettingsEditEmployeeEnterPhone'
                             )}`"
@@ -980,16 +994,23 @@
                     <div class="w-100 pt-15">
                       <p class="mb-1">{{ $t("adminSettingsPhone") }}</p>
                       <div
-                        class="d-flex w-100 justify-content-center align-items-center"
+                        class="d-flex w-100 justify-content-center border-dede align-items-center"
                       >
-                        <select
-                          class="color-f5 p-2 border-dede outline-none select-arrow"
-                        >
-                          <option>+86</option>
-                          <option>+971</option>
-                        </select>
+                      <b-dropdown
+                            :text="selectedCode"
+                            toggle-class="border-left-0 border-top-0 border-bottom-0 border-right color-f5 p-2 outline-none select-arrow"
+                            menu-class="h-select-200"
+                          >
+                            <b-dropdown-item
+                              href="#"
+                              v-for="(options, index) in countryCodes"
+                              :key="options.value"
+                              @click="(e) => itemSelected(e, index)"
+                              >{{ options.text }}</b-dropdown-item
+                            >
+                          </b-dropdown>
                         <input
-                          class="settings-input w-100 px-1 outline-none"
+                          class="settings-input w-100 px-1 border-0 outline-none"
                           :placeholder="`${$t('adminSettingsEnterPhone')}`"
                           type="number"
                         />
@@ -1508,9 +1529,37 @@ export default {
       passwordType2: "password",
       passwordType3: "password",
       selectedClient: {},
+      countryCodes: [
+        { value: "+986", text: " +986 " + this.$t("ksa") },
+        { value: "+971", text: " +971 " + this.$t("uae") },
+        { value: "+974", text: " +974 " + this.$t("qatar") },
+        { value: "+973", text: " +973 " + this.$t("bahrain") },
+        { value: "+978", text: " +978 " + this.$t("oman") },
+        { value: "+961", text: " +961 " + this.$t("lebanon") },
+        { value: "+962", text: " +962 " + this.$t("jordan") },
+        { value: "+963", text: " +963 " + this.$t("egypt") },
+        { value: "+376", text: " +376 " + this.$t("germany") },
+        { value: "+244", text: " +244 " + this.$t("Andorra") },
+        { value: "+1264", text: " +1264 " + this.$t("Angola") },
+        { value: "+1268", text: " +1268 " + this.$t("Anguilla") },
+        { value: "+54", text: " +54 " + this.$t("Antigua") },
+        { value: "+374", text: " +374 " + this.$t("Argentina") },
+        { value: "+297", text: " +297 " + this.$t("Armenia") },
+        { value: "+61", text: " +61 " + this.$t("Aruba") },
+        { value: "+43", text: " +43 " + this.$t("Australia") },
+        { value: "+994", text: " +994 " + this.$t("Austria") },
+        { value: "+1242", text: " +1242 " + this.$t("Azerbaijan") },
+        { value: "+880", text: " +880 " + this.$t("Bahamas") },
+        { value: "+1246", text: " +1246 " + this.$t("Bangladesh") },
+        { value: "+1375", text: " +1375 " + this.$t("Belarus") },
+      ],
+      selectedCode: "+986",
     };
   },
   methods: {
+    itemSelected(e, index) {
+      this.selectedCode = this.countryCodes[index].value;
+    },
     successDisplay() {
       document.getElementById("alertSuccess").classList.toggle("d-none");
     },
@@ -1644,8 +1693,8 @@ export default {
   color: #ff3a67;
 }
 .border-dede {
-  border: 1px solid #dedede;
-  border-radius: 4px;
+  border: 1px solid #dedede !important;
+  border-radius: 4px !important;
 }
 .settings-input {
   background: #ffffff;
@@ -1653,17 +1702,17 @@ export default {
   border-radius: 4px;
   height: 36px;
 }
-.first-name-input{
+.first-name-input {
   height: 36px;
-    background: #ffffff;
-border: 1px solid rgba(0, 0, 0, 0.15);
-border-radius: 6px 0px 0px 6px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 6px 0px 0px 6px;
 }
-.last-name-input{
-    height: 36px;
-    background: #ffffff;
-border: 1px solid rgba(0, 0, 0, 0.15);
-border-radius: 0px 6px 6px 0px;
+.last-name-input {
+  height: 36px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0px 6px 6px 0px;
 }
 .settings-btn {
   background: #245aab !important;

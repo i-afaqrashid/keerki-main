@@ -168,10 +168,23 @@
               hide-header-close
             >
               <div
-                class="d-flex w-100 justify-content-center align-items-center pt-5 pb-4"
+                class="d-flex w-100 justify-content-center align-items-center border-bottom pt-5 mb-4"
               >
+              <b-dropdown
+                  :text="selectedCode"
+                  toggle-class=" border-bottom border-0 outline-none w-100  bg-transparent"
+                  menu-class="h-select-200"
+                >
+                  <b-dropdown-item
+                    href="#"
+                    v-for="(options, index) in countryCodes"
+                    :key="options.value"
+                    @click="(e) => itemSelected(e, index)"
+                    >{{ options.text }}</b-dropdown-item
+                  >
+                </b-dropdown>
                 <input
-                  class="border-bottom outline-none w-100 pb-4"
+                  class="outline-none w-100"
                   :placeholder="`${$t('phonePlaceholder')}`"
                   v-model="phone"
                 />
@@ -191,7 +204,7 @@
                 </button>
               </div>
             </b-modal>
-            <p class="mb-0">{{ $t("accountPhone") }} {{ phone }}</p>
+            <p class="mb-0">{{ $t("accountPhone") }}  {{ selectedCode+ " " +  phone }}</p>
             <button class="outline-none" v-b-modal.phone-modal>
               <svg
                 width="24"
@@ -425,6 +438,10 @@ export default {
     DashboardTop,
   },
   methods: {
+
+    itemSelected(e, index) {
+      this.selectedCode  = this.countryCodes[index].value;
+    },
     handleOk() {
       document
         .getElementById("app")
@@ -458,6 +475,31 @@ export default {
       password: "1212525458585",
       newPassword: "",
       confirmPassword: "",
+      countryCodes: [
+        { value: "+986", text: " +986 " + this.$t("ksa") },
+        { value: "+971", text: " +971 " + this.$t("uae") },
+        { value: "+974", text: " +974 " + this.$t("qatar") },
+        { value: "+973", text: " +973 " + this.$t("bahrain") },
+        { value: "+978", text: " +978 " + this.$t("oman") },
+        { value: "+961", text: " +961 " + this.$t("lebanon") },
+        { value: "+962", text: " +962 " + this.$t("jordan") },
+        { value: "+963", text: " +963 " + this.$t("egypt") },
+        { value: "+376", text: " +376 " + this.$t("germany") },
+        { value: "+244", text: " +244 " + this.$t("Andorra") },
+        { value: "+1264", text: " +1264 " + this.$t("Angola") },
+        { value: "+1268", text: " +1268 " + this.$t("Anguilla") },
+        { value: "+54", text: " +54 " + this.$t("Antigua") },
+        { value: "+374", text: " +374 " + this.$t("Argentina") },
+        { value: "+297", text: " +297 " + this.$t("Armenia") },
+        { value: "+61", text: " +61 " + this.$t("Aruba") },
+        { value: "+43", text: " +43 " + this.$t("Australia") },
+        { value: "+994", text: " +994 " + this.$t("Austria") },
+        { value: "+1242", text: " +1242 " + this.$t("Azerbaijan") },
+        { value: "+880", text: " +880 " + this.$t("Bahamas") },
+        { value: "+1246", text: " +1246 " + this.$t("Bangladesh") },
+        { value: "+1375", text: " +1375 " + this.$t("Belarus") },
+      ],
+      selectedCode: "+986",
 
       options: [
         {
