@@ -267,4 +267,4 @@ const messages = {
 
     }
 }
-export default new VueI18n({ locale: localStorage.currentLanguage || 'en', fallbackLocale: process.env.VUE_APP_I18N_FALLBACK_LOCALE || 'en', messages, });
+export default new VueI18n({ locale: localStorage.currentLanguage || 'ar', fallbackLocale: process.env.VUE_APP_I18N_FALLBACK_LOCALE || 'ar', messages, });
