@@ -706,7 +706,7 @@
               {{ $t("adminOrdersDetailsCancel") }}
             </button>
             <button
-              class="btn rounded-pill button-color2C text-white border"
+              class="btn rounded-pill button-color2C text-white border ml-0"
               v-b-modal.send-message-modal
             >
               {{ $t("adminOrdersDetailsSendAMessage") }}

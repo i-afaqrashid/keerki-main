@@ -419,7 +419,6 @@
         >
           {{ $t("companyInfoReset") }}
         </button>
-        //s
         <button
           class="btn btn-secondary w-100 text-dark ml-lg-4 mt-4 mt-lg-0 form-buttons"
           type="submit"
