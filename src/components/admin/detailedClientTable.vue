@@ -345,7 +345,7 @@
               :color="'cancelled'"
             />
           </td>
-          <td>May 26, 2019</td>
+          <td><pre>May 26, 2020</pre></td>
           <td>18999897899</td>
           <td>£2550,30</td>
           <td>
@@ -353,7 +353,7 @@
             <p class="mb-0 updated-client">Updated 1 day ago</p>
           </td>
           <td>China</td>
-          <td>Shudi international...</td>
+          <td><pre>Shudi international...</pre></td>
         </tr>
         <tr class="text-center">
           <th class="pt-0" scope="row">
@@ -502,7 +502,7 @@
               :color="'done'"
             />
           </td>
-          <td>May 26, 2019</td>
+          <td><pre>May 26, 2020</pre></td>
           <td>18999897899</td>
           <td>£2550,30</td>
           <td>
@@ -510,7 +510,7 @@
             <p class="mb-0 updated-client">Updated 1 day ago</p>
           </td>
           <td>China</td>
-          <td>Shudi international...</td>
+          <td><pre>Shudi international...</pre></td>
         </tr>
         <tr class="text-center">
           <th class="pt-0" scope="row">
@@ -659,7 +659,7 @@
               :color="'done'"
             />
           </td>
-          <td>May 26, 2019</td>
+          <td><pre>May 26, 2020</pre></td>
           <td>18999897899</td>
           <td>£2550,30</td>
           <td>
@@ -667,7 +667,7 @@
             <p class="mb-0 updated-client">Updated 1 day ago</p>
           </td>
           <td>China</td>
-          <td>Shudi international...</td>
+          <td><pre>Shudi international...</pre></td>
         </tr>
         <tr class="text-center">
           <th class="pt-0" scope="row">
@@ -816,7 +816,7 @@
               :color="'clientCancel'"
             />
           </td>
-          <td>May 26, 2019</td>
+          <td><pre>May 26, 2020</pre></td>
           <td>18999897899</td>
           <td>£2550,30</td>
           <td>
@@ -824,7 +824,7 @@
             <p class="mb-0 updated-client">Updated 1 day ago</p>
           </td>
           <td>China</td>
-          <td>Shudi international...</td>
+          <td><pre>Shudi international...</pre></td>
         </tr>
         <tr class="text-center">
           <th class="pt-0" scope="row">
@@ -973,7 +973,7 @@
               :color="'in-progress'"
             />
           </td>
-          <td>May 26, 2019</td>
+          <td><pre>May 26, 2020</pre></td>
           <td>18999897899</td>
           <td>£2550,30</td>
           <td>
@@ -981,7 +981,7 @@
             <p class="mb-0 updated-client">Updated 1 day ago</p>
           </td>
           <td>China</td>
-          <td>Shudi international...</td>
+          <td><pre>Shudi international...</pre></td>
         </tr>
         <tr class="text-center">
           <th class="pt-0" scope="row">
@@ -1130,7 +1130,7 @@
               :color="'shipped'"
             />
           </td>
-          <td>May 26, 2019</td>
+          <td><pre>May 26, 2020</pre></td>
           <td>18999897899</td>
           <td>£2550,30</td>
           <td>
@@ -1138,7 +1138,7 @@
             <p class="mb-0 updated-client">Updated 1 day ago</p>
           </td>
           <td>China</td>
-          <td>Shudi international...</td>
+          <td><pre>Shudi international...</pre></td>
         </tr>
         <tr class="text-center">
           <th class="pt-0" scope="row">
@@ -1287,7 +1287,7 @@
               :color="'in-progress'"
             />
           </td>
-          <td>May 26, 2019</td>
+          <td><pre>May 26, 2020</pre></td>
           <td>18999897899</td>
           <td>£2550,30</td>
           <td>
@@ -1295,7 +1295,7 @@
             <p class="mb-0 updated-client">Updated 1 day ago</p>
           </td>
           <td>China</td>
-          <td>Shudi international...</td>
+          <td><pre>Shudi international...</pre></td>
         </tr>
         <tr class="text-center">
           <th class="pt-0" scope="row">
@@ -1444,7 +1444,7 @@
               :color="'clientCancel'"
             />
           </td>
-          <td>May 26, 2019</td>
+          <td><pre>May 26, 2020</pre></td>
           <td>18999897899</td>
           <td>£2550,30</td>
           <td>
@@ -1452,7 +1452,7 @@
             <p class="mb-0 updated-client">Updated 1 day ago</p>
           </td>
           <td>China</td>
-          <td>Shudi international...</td>
+          <td><pre>Shudi international...</pre></td>
         </tr>
       </tbody>
     </table>
@@ -1518,7 +1518,7 @@ export default {
   data() {
     return {
       phone: 18999897899,
-      dateJoined: "May 26, 2019",
+      dateJoined: "",
       time: "6:30px",
       country: "China",
       name: "David Smill Will",
@@ -1531,6 +1531,15 @@ export default {
 };
 </script>
 <style scoped>
+pre{
+      margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+}
 .updated-client {
   font-style: normal;
   font-weight: normal;

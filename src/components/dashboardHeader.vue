@@ -49,7 +49,7 @@
                 />
               </p>
 
-              <b-nav-item-dropdown :text="`${$t('setLanguage')}`" toggle-class="p-0">
+              <b-nav-item-dropdown :text="`${$t('setLanguage')}`" toggle-class="p-0 d-flex align-items-center">
                 <b-dropdown-item @click="switchLocale('en')">
                   <img
                     src="../assets/enFlag.png"
@@ -82,7 +82,7 @@
           </b-navbar-nav>
         </div>
       </b-collapse>
-      <b-navbar-nav class="d-none d-lg-block ml-xl-7 ml-lg-6">
+      <b-navbar-nav class="d-none d-lg-block ml-xl-10 ml-lg-18">
         <img src="../assets/logo.png" width="200" />
       </b-navbar-nav>
     </b-navbar>

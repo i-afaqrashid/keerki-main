@@ -36,6 +36,22 @@ export default {
 
 <style>
 
+@media (min-width: 992px) {
+  .width-117 {
+    width: 117px;
+  }
+  .width-145 {
+    width: 145px;
+  }
+}
+.btn-select-table {
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 3px !important;
+}
+.h-38 {
+  height: 38px !important;
+}
 .overflow-scroll{
   overflow-y: scroll!important;
   overflow-x:hidden!important;

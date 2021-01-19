@@ -99,6 +99,37 @@
         </table>
       </div>
       <div class="w-90 d-flex align-items-center my-4">
+
+        <b-modal
+          id="reset-modal"
+          centered
+          hide-footer
+          header-class="header-class"
+          hide-header
+          hide-header-close
+        >
+          <div
+            class="d-flex flex-column w-100 justify-content-center align-items-center p-3"
+          >
+            <div class="w-100">
+              <h1 class="fs-16">{{ $t("updateData") }}</h1>
+            </div>
+            <div class="d-flex justify-content-end w-100 mt-3">
+              <button
+                class="rounded-lg btn modal-logout bg-white color-c7 outline-none"
+                @click="$bvModal.hide('reset-modal')"
+              >
+                {{ $t("companyInfoReset") }}
+              </button>
+              <button
+                class="rounded-lg btn btn-primary outline-none ml-2"
+                @click="$bvModal.hide('reset-modal');isDisabled = true;"
+              >
+                {{ $t("companySave") }}
+              </button>
+            </div>
+          </div>
+        </b-modal>
         <button
           v-if="isDisabled"
           class="btn p-0 mb-0 outline-none d-flex align-items-center justify-content-around"
@@ -520,8 +551,53 @@
         >
           {{ $t("adminOrdersDetailsPayNow") }}
         </button>
+
+        <b-modal
+          id="question-modal"
+          centered
+          hide-footer
+          content-class="content-class"
+          header-class="header-class"
+          hide-header
+          size="lg"
+          hide-header-close
+        >
+          <div dir="auto">
+            <p>
+              {{ $t("adminOrdersDetailsYourEnquiry") }}
+            </p>
+            <div class="modal-orders p-2">
+              <input
+                class="bg-transparent w-100 outline-none"
+                :placeholder="`${$t('adminOrdersDetailsWriteYourQuestion')}`"
+              />
+              <div
+                class="d-flex justify-content-end align-items-center pt-9 pt-lg-5"
+              >
+                <div
+                  class="d-flex justify-content-around align-items-center w-xl-35"
+                >
+                  <button
+                    class="order-color-c7 btn outline-none border rounded-pill modal-order-btn"
+                    @click="$bvModal.hide('question-modal')"
+                  >
+                    {{ $t("adminOrdersDetailsIgnore") }}
+                  </button>
+
+                  <button
+                    class="btn-primary btn outline-none border rounded-pill modal-order-btn"
+                    @click="$bvModal.hide('question-modal')"
+                  >
+                    {{ $t("adminOrdersDetailsSubmit") }}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </b-modal>
         <button
           class="btn box-buttons button-color2C mt-4 mt-xl-0 text-white rounded-pill"
+          v-b-modal.question-modal
         >
           {{ $t("adminOrdersDetailsQuestion") }}
         </button>
@@ -608,7 +684,7 @@
         </button>
       </div>
     </div>
-    <div class="w-100 d-flex justify-content-end align-items-center mt-9">
+    <div class="w-100 d-flex justify-content-end align-items-center mt-11 mb-5">
       <button
         class="pop-over-message outline-none rounded-circle d-flex justify-content-center align-items-center"
         id="popover-order-message"
@@ -630,7 +706,7 @@
               {{ $t("adminOrdersDetailsCancel") }}
             </button>
             <button
-              class="btn rounded-pill btn-primary border"
+              class="btn rounded-pill button-color2C text-white border"
               v-b-modal.send-message-modal
             >
               {{ $t("adminOrdersDetailsSendAMessage") }}
@@ -721,8 +797,8 @@ export default {
       this.isDisabled = false;
     },
     saveHandler() {
-      this.isDisabled = true;
-    },
+      this.$bvModal.show('reset-modal')
+          },
     tagsInputHandler(e) {
       this.id++;
       if (e.keyCode === 13) {

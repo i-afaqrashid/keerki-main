@@ -42,7 +42,7 @@
         </div>
       </div>
       <div
-        class="graph-side-cards right-border-graph d-flex flex-column justify-content-between align-items-center"
+        class="graph-side-cards right-border-graph d-none d-lg-flex flex-column justify-content-between align-items-center"
       >
         <div
           class="w-100 d-flex flex-column align-items-center graph-card justify-content-center border-bottom"
@@ -64,6 +64,40 @@
         </div>
         <div
           class="w-100 d-flex flex-column align-items-center graph-card justify-content-center border-bottom"
+        >
+          <p class="fs-16 font-weight-light">{{ $t("adminNoOfOrders") }}</p>
+          <h1 class="font-24 font-weight-bold">449</h1>
+        </div>
+        <div
+          class="w-100 d-flex flex-column align-items-center graph-card justify-content-center border-bottom"
+        >
+          <p class="fs-16 font-weight-light">{{ $t("adminNoOfOrders") }}</p>
+          <h1 class="font-24 font-weight-bold">449</h1>
+        </div>
+      </div>
+      <div
+        class="graph-side-cards right-border-graph d-flex d-lg-none flex-wrap justify-content-between align-items-center"
+      >
+        <div
+          class="w-50 d-flex flex-column border-top align-items-center graph-card justify-content-center border-bottom"
+        >
+          <p class="fs-16 font-weight-light">{{ $t("adminNoOfOrders") }}</p>
+          <h1 class="font-24 font-weight-bold">449</h1>
+        </div>
+        <div
+          class="w-50 d-flex border-left border-top flex-column align-items-center graph-card justify-content-center border-bottom"
+        >
+          <p class="fs-16 font-weight-light">{{ $t("adminNoOfOrders") }}</p>
+          <h1 class="font-24 font-weight-bold">449</h1>
+        </div>
+        <div
+          class="w-50 d-flex flex-column align-items-center graph-card justify-content-center border-bottom"
+        >
+          <p class="fs-16 font-weight-light">{{ $t("adminNoOfOrders") }}</p>
+          <h1 class="font-24 font-weight-bold">449</h1>
+        </div>
+        <div
+          class="w-50 border-left d-flex flex-column align-items-center graph-card justify-content-center border-bottom"
         >
           <p class="fs-16 font-weight-light">{{ $t("adminNoOfOrders") }}</p>
           <h1 class="font-24 font-weight-bold">449</h1>

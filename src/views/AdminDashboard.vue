@@ -616,7 +616,7 @@
                 <b-dropdown
                   :text="`${$t('setLanguage')}`"
                   variant="transparent"
-                  toggle-class="p-0"
+                  toggle-class="p-0 d-flex align-items-center"
                 >
                   <b-dropdown-item @click="switchLocale('en')">
                     <img

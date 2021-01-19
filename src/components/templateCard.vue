@@ -1,6 +1,6 @@
 <template>
   <div
-    class="d-flex flex-column justify-content-center align-items-center mt-4 mx-lg-4"
+    class="d-flex flex-column justify-content-center align-items-center mt-4 mx-md-4"
   >
     <div class="template-card p-15">
       <CustomAlert

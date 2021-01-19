@@ -118,9 +118,13 @@
                   <span class="font-weight-light text-muted"
                     >{{ $t("clientDetailsMemberShip") }}&nbsp;</span
                   >
-                  <button class="btn btn-dark px-4 outline-none py-0">
-                    {{ $t("clientMemberShipVip") }}
+                  <button
+                    v-if="isDisabled"
+                    class="btn btn-dark px-4 outline-none py-0"
+                  >
+                    {{memberShip}}
                   </button>
+                  <input v-else class="px-2 outline-none" v-model="memberShip" :placeholder="`${$t('clientMemberShipVip')}`" />
                 </p>
               </td>
             </tr>
@@ -249,14 +253,39 @@
                         class="px-2 outline-none"
                         @click="deleteHandler(index)"
                       >
-                        <svg width="24" height="24" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="8.5" cy="8.5" r="8.5" fill="#FF3737"/>
-<path d="M4.76001 6.12012H5.51557H11.56" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M6.60572 6.25601V5.50801C6.60572 5.30963 6.68759 5.11937 6.83334 4.97909C6.97908 4.83882 7.17675 4.76001 7.38286 4.76001H8.93715C9.14326 4.76001 9.34093 4.83882 9.48667 4.97909C9.63241 5.11937 9.71429 5.30963 9.71429 5.50801V6.25601M10.88 6.25601V11.492C10.88 11.6904 10.7981 11.8806 10.6524 12.0209C10.5066 12.1612 10.309 12.24 10.1029 12.24H6.21715C6.01103 12.24 5.81336 12.1612 5.66762 12.0209C5.52188 11.8806 5.44 11.6904 5.44 11.492V6.25601H10.88Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M7.47998 8.15991V10.1999" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M8.84003 8.15991V10.1999" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 17 17"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle cx="8.5" cy="8.5" r="8.5" fill="#FF3737" />
+                          <path
+                            d="M4.76001 6.12012H5.51557H11.56"
+                            stroke="white"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M6.60572 6.25601V5.50801C6.60572 5.30963 6.68759 5.11937 6.83334 4.97909C6.97908 4.83882 7.17675 4.76001 7.38286 4.76001H8.93715C9.14326 4.76001 9.34093 4.83882 9.48667 4.97909C9.63241 5.11937 9.71429 5.30963 9.71429 5.50801V6.25601M10.88 6.25601V11.492C10.88 11.6904 10.7981 11.8806 10.6524 12.0209C10.5066 12.1612 10.309 12.24 10.1029 12.24H6.21715C6.01103 12.24 5.81336 12.1612 5.66762 12.0209C5.52188 11.8806 5.44 11.6904 5.44 11.492V6.25601H10.88Z"
+                            stroke="white"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M7.47998 8.15991V10.1999"
+                            stroke="white"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M8.84003 8.15991V10.1999"
+                            stroke="white"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
                       </button>
                     </div>
                     <div
@@ -273,7 +302,7 @@
                             class="d-flex flex-column justify-content-end pb-2"
                           >
                             <input
-                              class="font-11 tag-btn outline-none width-110 text-dark px-2 "
+                              class="font-11 tag-btn outline-none width-110 text-dark px-2"
                               @keypress="
                                 (e) => {
                                   inputHandler(e, index);
@@ -324,14 +353,39 @@
                         class="px-2 outline-none"
                         @click="deleteHandler(index)"
                       >
-                        <svg width="24" height="24" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="8.5" cy="8.5" r="8.5" fill="#FF3737"/>
-<path d="M4.76001 6.12012H5.51557H11.56" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M6.60572 6.25601V5.50801C6.60572 5.30963 6.68759 5.11937 6.83334 4.97909C6.97908 4.83882 7.17675 4.76001 7.38286 4.76001H8.93715C9.14326 4.76001 9.34093 4.83882 9.48667 4.97909C9.63241 5.11937 9.71429 5.30963 9.71429 5.50801V6.25601M10.88 6.25601V11.492C10.88 11.6904 10.7981 11.8806 10.6524 12.0209C10.5066 12.1612 10.309 12.24 10.1029 12.24H6.21715C6.01103 12.24 5.81336 12.1612 5.66762 12.0209C5.52188 11.8806 5.44 11.6904 5.44 11.492V6.25601H10.88Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M7.47998 8.15991V10.1999" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M8.84003 8.15991V10.1999" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 17 17"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle cx="8.5" cy="8.5" r="8.5" fill="#FF3737" />
+                          <path
+                            d="M4.76001 6.12012H5.51557H11.56"
+                            stroke="white"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M6.60572 6.25601V5.50801C6.60572 5.30963 6.68759 5.11937 6.83334 4.97909C6.97908 4.83882 7.17675 4.76001 7.38286 4.76001H8.93715C9.14326 4.76001 9.34093 4.83882 9.48667 4.97909C9.63241 5.11937 9.71429 5.30963 9.71429 5.50801V6.25601M10.88 6.25601V11.492C10.88 11.6904 10.7981 11.8806 10.6524 12.0209C10.5066 12.1612 10.309 12.24 10.1029 12.24H6.21715C6.01103 12.24 5.81336 12.1612 5.66762 12.0209C5.52188 11.8806 5.44 11.6904 5.44 11.492V6.25601H10.88Z"
+                            stroke="white"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M7.47998 8.15991V10.1999"
+                            stroke="white"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M8.84003 8.15991V10.1999"
+                            stroke="white"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
                       </button>
                     </div>
                   </div>
@@ -342,6 +396,39 @@
         </div>
       </div>
       <div class="w-90 d-flex my-4 align-items-center">
+        <b-modal
+          id="reset-modal"
+          centered
+          hide-footer
+          header-class="header-class"
+          hide-header
+          hide-header-close
+        >
+          <div
+            class="d-flex flex-column w-100 justify-content-center align-items-center p-3"
+          >
+            <div class="w-100">
+              <h1 class="fs-16">{{ $t("updateData") }}</h1>
+            </div>
+            <div class="d-flex justify-content-end w-100 mt-3">
+              <button
+                class="rounded-lg btn modal-logout bg-white color-c7 outline-none"
+                @click="$bvModal.hide('reset-modal')"
+              >
+                {{ $t("companyInfoReset") }}
+              </button>
+              <button
+                class="rounded-lg btn btn-primary outline-none ml-2"
+                @click="
+                  $bvModal.hide('reset-modal');
+                  isDisabled = true;
+                "
+              >
+                {{ $t("companySave") }}
+              </button>
+            </div>
+          </div>
+        </b-modal>
         <button
           v-if="isDisabled"
           class="btn p-0 mb-0 outline-none d-flex align-items-center justify-content-around"
@@ -371,6 +458,7 @@
           </svg>
           <p class="mb-0 w-100">{{ $t("clientDetailsEdit") }}</p>
         </button>
+
         <button
           v-else
           class="btn btn-primary mb-0 outline-none d-flex align-items-center justify-content-around"
@@ -431,6 +519,7 @@ export default {
   },
   data() {
     return {
+      memberShip:"General",
       currentColor1: "tagGreen",
       text: this.$t("intClient"),
       dropDown: false,
@@ -461,7 +550,7 @@ export default {
       this.isDisabled = false;
     },
     saveHandler() {
-      this.isDisabled = true;
+      this.$bvModal.show("reset-modal");
     },
     dropHandler(index) {
       let d = this.tags[index];
@@ -500,8 +589,8 @@ export default {
 };
 </script>
 <style scoped>
-.width-110{
-  width:109px;
+.width-110 {
+  width: 109px;
 }
 .tags-container {
   width: 50% !important;
@@ -571,10 +660,9 @@ export default {
 .w-75-resp {
   width: 100%;
 }
-@media (max-width:576px){
-  .tags-container
-  {
-    width:63%!important;
+@media (max-width: 576px) {
+  .tags-container {
+    width: 63% !important;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 768px) {

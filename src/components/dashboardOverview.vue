@@ -43,7 +43,7 @@
         </div>
       </div>
       <button
-        class="text-dark align-self-end mt-14"
+        class="text-dark align-self-end mt-9 mb-5"
         id="popover-order-message1"
       >
         <b-popover

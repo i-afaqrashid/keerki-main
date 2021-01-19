@@ -287,11 +287,11 @@
             </button>
           </td>
           <td @click="rowClicked">{{ this.phone }}</td>
-          <td @click="rowClicked">{{ this.dateJoined }}</td>
+          <td @click="rowClicked"><pre>May 26, 2020</pre></td>
           <td @click="rowClicked">{{ this.country }}</td>
           <td @click="rowClicked">
-            <p class="mb-0">David Smith Will</p>
-            <p class="mb-0 fs-12 text-muted font-weight-light">company name</p>
+           <pre class="">David Smith Will</pre>
+            <pre class="mb-0 fs-12 text-muted font-weight-light">company name</pre>
           </td>
           <td @click="rowClicked">
             <img
@@ -446,11 +446,11 @@
             </button>
           </td>
           <td @click="rowClicked">{{ this.phone }}</td>
-          <td @click="rowClicked">{{ this.dateJoined }}</td>
+          <td @click="rowClicked"><pre>May 26, 2020</pre></td>
           <td @click="rowClicked">{{ this.country }}</td>
           <td @click="rowClicked">
-            <p class="mb-0">David Smith Will</p>
-            <p class="mb-0 fs-12 text-muted font-weight-light">company name</p>
+           <pre class="">David Smith Will</pre>
+            <pre class="mb-0 fs-12 text-muted font-weight-light">company name</pre>
           </td>
           <td @click="rowClicked">
             <img
@@ -605,11 +605,11 @@
             </button>
           </td>
           <td @click="rowClicked">{{ this.phone }}</td>
-          <td @click="rowClicked">{{ this.dateJoined }}</td>
+          <td @click="rowClicked"><pre>May 26, 2020</pre></td>
           <td @click="rowClicked">{{ this.country }}</td>
           <td @click="rowClicked">
-            <p class="mb-0">David Smith Will</p>
-            <p class="mb-0 fs-12 text-muted font-weight-light">company name</p>
+            <pre class="">David Smith Will</pre>
+            <pre class="mb-0 fs-12 text-muted font-weight-light">company name</pre>
           </td>
           <td @click="rowClicked">
             <img
@@ -764,11 +764,11 @@
             </button>
           </td>
           <td @click="rowClicked">{{ this.phone }}</td>
-          <td @click="rowClicked">{{ this.dateJoined }}</td>
+          <td @click="rowClicked"><pre>May 26, 2020</pre></td>
           <td @click="rowClicked">{{ this.country }}</td>
           <td @click="rowClicked">
-            <p class="mb-0">David Smith Will</p>
-            <p class="mb-0 fs-12 text-muted font-weight-light">company name</p>
+           <pre class="">David Smith Will</pre>
+            <pre class="mb-0 fs-12 text-muted font-weight-light">company name</pre>
           </td>
           <td @click="rowClicked">
             <img
@@ -923,11 +923,11 @@
             </button>
           </td>
           <td @click="rowClicked">{{ this.phone }}</td>
-          <td @click="rowClicked">{{ this.dateJoined }}</td>
+          <td @click="rowClicked"><pre>May 26, 2020</pre></td>
           <td @click="rowClicked">{{ this.country }}</td>
           <td @click="rowClicked">
-            <p class="mb-0">David Smith Will</p>
-            <p class="mb-0 fs-12 text-muted font-weight-light">company name</p>
+           <pre class="">David Smith Will</pre>
+            <pre class="mb-0 fs-12 text-muted font-weight-light">company name</pre>
           </td>
           <td @click="rowClicked">
             <img
@@ -1082,11 +1082,11 @@
             </button>
           </td>
           <td @click="rowClicked">{{ this.phone }}</td>
-          <td @click="rowClicked">{{ this.dateJoined }}</td>
+          <td @click="rowClicked"><pre>May 26, 2020</pre></td>
           <td @click="rowClicked">{{ this.country }}</td>
           <td @click="rowClicked">
-            <p class="mb-0">David Smith Will</p>
-            <p class="mb-0 fs-12 text-muted font-weight-light">company name</p>
+           <pre class="">David Smith Will</pre>
+            <pre class="mb-0 fs-12 text-muted font-weight-light">company name</pre>
           </td>
           <td @click="rowClicked">
             <img
@@ -1241,11 +1241,11 @@
             </button>
           </td>
           <td @click="rowClicked">{{ this.phone }}</td>
-          <td @click="rowClicked">{{ this.dateJoined }}</td>
+          <td @click="rowClicked"><pre>May 26, 2020</pre></td>
           <td @click="rowClicked">{{ this.country }}</td>
           <td @click="rowClicked">
-            <p class="mb-0">David Smith Will</p>
-            <p class="mb-0 fs-12 text-muted font-weight-light">company name</p>
+           <pre class="">David Smith Will</pre>
+            <pre class="mb-0 fs-12 text-muted font-weight-light">company name</pre>
           </td>
           <td @click="rowClicked">
             <img
@@ -1400,11 +1400,11 @@
             </button>
           </td>
           <td @click="rowClicked">{{ this.phone }}</td>
-          <td @click="rowClicked">{{ this.dateJoined }}</td>
+          <td @click="rowClicked"><pre>May 26, 2020</pre></td>
           <td @click="rowClicked">{{ this.country }}</td>
           <td @click="rowClicked">
-            <p class="mb-0">David Smith Will</p>
-            <p class="mb-0 fs-12 text-muted font-weight-light">company name</p>
+           <pre class="">David Smith Will</pre>
+            <pre class="mb-0 fs-12 text-muted font-weight-light">company name</pre>
           </td>
           <td @click="rowClicked">
             <img
@@ -1475,10 +1475,10 @@ export default {
   data() {
     return {
       phone: 15888456664,
-      dateJoined: "May 26, 2020",
+      dateJoined: "",
       country: "KSA",
       name: "David Smill Will",
-      companyName: "company name",
+      companyName: "company,name",
     };
   },
   methods: {
@@ -1492,6 +1492,15 @@ export default {
 
 </script>
 <style scoped>
+pre{
+      margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+}
 .button-width{
   width:90px;
 }

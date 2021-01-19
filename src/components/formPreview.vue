@@ -11,7 +11,9 @@
     <div
       class="d-flex flex-lg-row flex-column w-100 justify-content-around align-items-center mt-5"
     >
-      <button class="d-flex align-items-center outline-none">
+      <button class="d-flex align-items-center outline-none"
+      @click="$router.go(-1)"
+      >
         <svg
           width="42"
           height="42"

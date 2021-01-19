@@ -35,9 +35,7 @@
             <p class="pl-lg-5">{{ $t("about") }}</p>
             <p class="pl-lg-5">{{ $t("contact") }}</p>
             <div class="d-flex align-items-start">
-              <p
-                class="pl-lg-5 pr-2 mb-0 d-flex "
-              >
+              <p class="pl-lg-5 pr-2 mb-0 d-flex">
                 <img
                   v-if="this.$i18n.locale == 'en'"
                   src="../assets/enFlag.png"
@@ -62,7 +60,10 @@
                 />
               </p>
 
-              <b-nav-item-dropdown :text="`${$t('setLanguage')}`" toggle-class="p-0">
+              <b-nav-item-dropdown
+                :text="`${$t('setLanguage')}`"
+                toggle-class="p-0 d-flex align-items-center"
+              >
                 <b-dropdown-item @click="switchLocale('en')">
                   <img
                     src="../assets/enFlag.png"

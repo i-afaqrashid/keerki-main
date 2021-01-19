@@ -69,15 +69,15 @@
               :minMatchingChars="1"
             >
               <template slot="suggestion" slot-scope="{ data, htmlText }">
-                <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center flex-lg-column flex-xl-row">
                   <CustomAlert
                     v-bind:alert="200"
                     v-bind:type="data.status"
                     v-bind:color="data.color"
                   />
                   <div class="d-flex flex-column">
-                    <span class="ml-4" v-html="htmlText"></span>
-                    <span class="ml-4" v-html="data.dateCompleted"></span>
+                    <span class="ml-4 ml-lg-0 ml-xl-4 mt-2 mt-lg-2 mt-xl-0" v-html="htmlText"></span>
+                    <span class="ml-4 ml-lg-0 ml-xl-4" v-html="data.dateCompleted"></span>
                   </div>
                 </div>
               </template>
@@ -200,7 +200,7 @@
                   v-bind:type="`${$t('inProgressBtn')}`"
                 />
               </th>
-              <td class="py-lg-15">{{ this.data }}</td>
+              <td class="py-lg-15"><pre>{{ this.data }} </pre></td>
               <td class="py-lg-15">{{ this.price }}</td>
               <td class="py-lg-15"></td>
               <td
@@ -263,7 +263,7 @@
                   v-bind:color="'done'"
                 />
               </th>
-              <td class="py-lg-15">{{ this.data }}</td>
+              <td class="py-lg-15"><pre>{{ this.data }} </pre></td>
               <td class="py-lg-15">{{ this.price }}</td>
               <td class="py-lg-15"></td>
               <td
@@ -324,7 +324,7 @@
                   v-bind:color="'waiting'"
                 />
               </th>
-              <td class="py-lg-15">{{ this.data }}</td>
+              <td class="py-lg-15"><pre>{{ this.data }} </pre></td>
               <td class="py-lg-15">{{ this.price }}</td>
               <td></td>
               <td
@@ -385,7 +385,7 @@
                   v-bind:color="'cancelled'"
                 />
               </th>
-              <td class="py-lg-15">{{ this.data }}</td>
+              <td class="py-lg-15"><pre>{{ this.data }} </pre></td>
               <td class="py-lg-15">{{ this.price }}</td>
               <td></td>
               <td
@@ -445,7 +445,7 @@
                   v-bind:type="`${$t('inProgressBtn')}`"
                 />
               </th>
-              <td class="py-lg-15">{{ this.data }}</td>
+              <td class="py-lg-15"><pre>{{ this.data }} </pre></td>
               <td class="py-lg-15">{{ this.price }}</td>
               <td></td>
               <td
@@ -501,7 +501,7 @@
         </table>
         <div class="d-flex justify-content-md-end align-items-center w-90">
           <div
-            class="w-50 d-flex flex-column flex-lg-row justify-content-between"
+            class="width-50 d-flex flex-column flex-sm-row justify-content-between"
           >
             <div
               class="d-flex align-items-center width-25 justify-content-lg-around justify-content-center"
@@ -513,7 +513,7 @@
               </select>
             </div>
             <div
-              class="width-25 d-flex justify-content-lg-between justify-content-center align-items-center pt-4 pt-lg-0"
+              class="width-25 d-flex justify-content-lg-between mt-4 mt-sm-0 justify-content-center align-items-center"
             >
               <p class="mb-0 text-muted">1-8 of 1240</p>
               <button class="outline-none">
@@ -611,21 +611,15 @@ export default {
   },
 };
 </script>
-<style>
-@media (min-width: 992px) {
-  .width-117 {
-    width: 117px;
-  }
-  .width-145 {
-    width: 145px;
-  }
+<style scoped>
+pre{
+      margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
 }
-.btn-select-table {
-  width: 20px !important;
-  height: 20px !important;
-  border-radius: 3px !important;
-}
-.h-38 {
-  height: 38px !important;
-}
+
 </style>

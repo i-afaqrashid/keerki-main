@@ -352,7 +352,7 @@
               :color="'cancelled'"
             />
           </td>
-          <td>May 26, 2019</td>
+          <td><pre>May 26, 2019</pre></td>
           <td>18999897899</td>
           <td>£2550,30</td>
           <td>
@@ -360,7 +360,7 @@
             <p class="mb-0 updated-client">Updated 1 day ago</p>
           </td>
           <td>China</td>
-          <td>Shudi international...</td>
+          <td><pre>Shudi international...</pre></td>
           <td @click="stopDefault">
             <b-form-checkbox
               id="checkbox-c2"
@@ -516,7 +516,7 @@
             />
             <p class="mb-0 text-status text-left">By Liyong</p>
           </td>
-          <td>May 26, 2019</td>
+          <td><pre>May 26, 2019</pre></td>
           <td>18999897899</td>
           <td>£2550,30</td>
           <td>
@@ -524,7 +524,7 @@
             <p class="mb-0 updated-client">Updated 1 day ago</p>
           </td>
           <td>China</td>
-          <td>Shudi international...</td>
+          <td><pre>Shudi international...</pre></td>
           <td @click="stopDefault">
             <b-form-checkbox
               id="checkbox-c3"
@@ -680,7 +680,7 @@
             />
             <p class="mb-0 text-status text-left">By Liyong</p>
           </td>
-          <td>May 26, 2019</td>
+          <td><pre>May 26, 2019</pre></td>
           <td>18999897899</td>
           <td>£2550,30</td>
           <td>
@@ -688,7 +688,7 @@
             <p class="mb-0 updated-client">Updated 1 day ago</p>
           </td>
           <td>China</td>
-          <td>Shudi international...</td>
+          <td><pre>Shudi international...</pre></td>
           <td @click="stopDefault">
             <b-form-checkbox
               id="checkbox-c4"
@@ -844,7 +844,7 @@
             />
             <p class="mb-0 text-status text-left">By Smith</p>
           </td>
-          <td>May 26, 2019</td>
+          <td><pre>May 26, 2019</pre></td>
           <td>18999897899</td>
           <td>£2550,30</td>
           <td>
@@ -852,7 +852,7 @@
             <p class="mb-0 updated-client">Updated 1 day ago</p>
           </td>
           <td>China</td>
-          <td>Shudi international...</td>
+          <td><pre>Shudi international...</pre></td>
           <td @click="stopDefault">
             <b-form-checkbox
               id="checkbox-c5"
@@ -1008,7 +1008,7 @@
             />
             <p class="mb-0 text-status text-left">By Sara</p>
           </td>
-          <td>May 26, 2019</td>
+          <td><pre>May 26, 2019</pre></td>
           <td>18999897899</td>
           <td>£2550,30</td>
           <td>
@@ -1016,7 +1016,7 @@
             <p class="mb-0 updated-client">Updated 1 day ago</p>
           </td>
           <td>China</td>
-          <td>Shudi international...</td>
+          <td><pre>Shudi international...</pre></td>
           <td @click="stopDefault">
             <b-form-checkbox
               id="checkbox-c6"
@@ -1172,7 +1172,7 @@
             />
             <p class="mb-0 text-status text-left">By Hedi</p>
           </td>
-          <td>May 26, 2019</td>
+          <td><pre>May 26, 2019</pre></td>
           <td>18999897899</td>
           <td>£2550,30</td>
           <td>
@@ -1180,7 +1180,7 @@
             <p class="mb-0 updated-client">Updated 1 day ago</p>
           </td>
           <td>China</td>
-          <td>Shudi international...</td>
+          <td><pre>Shudi international...</pre></td>
           <td @click="stopDefault">
             <b-form-checkbox
               id="checkbox-c7"
@@ -1336,7 +1336,7 @@
             />
             <p class="mb-0 text-status text-left">By David</p>
           </td>
-          <td>May 26, 2019</td>
+          <td><pre>May 26, 2019</pre></td>
           <td>18999897899</td>
           <td>£2550,30</td>
           <td>
@@ -1344,7 +1344,7 @@
             <p class="mb-0 updated-client">Updated 1 day ago</p>
           </td>
           <td>China</td>
-          <td>Shudi international...</td>
+          <td><pre>Shudi international...</pre></td>
           <td @click="stopDefault">
             <b-form-checkbox
               id="checkbox-c8"
@@ -1500,7 +1500,7 @@
             />
             <p class="mb-0 text-status text-left">By Jane</p>
           </td>
-          <td>May 26, 2019</td>
+          <td><pre>May 26, 2019</pre></td>
           <td>18999897899</td>
           <td>£2550,30</td>
           <td>
@@ -1508,7 +1508,7 @@
             <p class="mb-0 updated-client">Updated 1 day ago</p>
           </td>
           <td>China</td>
-          <td>Shudi international...</td>
+          <td><pre>Shudi international...</pre></td>
           <td @click="stopDefault">
             <b-form-checkbox
               id="checkbox-c9"
@@ -1616,6 +1616,15 @@ export default {
 };
 </script>
 <style scoped>
+pre{
+      margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+}
 .text-status {
   font-weight: normal;
   font-size: 12px;

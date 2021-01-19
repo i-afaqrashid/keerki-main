@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-100 d-flex align-items-lg-center justify-content-between flex-column px-lg-11 pt-11 flex-lg-row"
+    class="w-100 d-flex align-items-lg-center justify-content-between flex-column px-xl-11 pt-11 flex-lg-row"
   >
     <div class="order-1 order-lg-0 mt-4 mt-lg-0">
       <h1 class="fs-43">{{ this.Heading }}</h1>
@@ -33,7 +33,7 @@
     >
       <div class="d-flex">
         <button
-          class="d-none d-lg-flex align-items-center justify-content-center outline-none"
+          class="d-flex align-items-center justify-content-center outline-none"
           v-b-modal.entry-modal
         >
           <svg
@@ -48,7 +48,7 @@
               fill="#0278AE"
             />
           </svg>
-          <p class="btn p-0 outline-none mb-0 mx-2" v-b-modal.entry-modal>
+          <p class="btn p-0 outline-none mb-0 mx-sm-1 mx-xl-2" v-b-modal.entry-modal>
             {{ $t("help") }}
           </p>
 
@@ -148,7 +148,7 @@
         <button
           v-b-popover.hover.top
           id="popover-target-2"
-          class="outline-none ml-3 ml-lg-4"
+          class="outline-none ml-sm-2 ml-xl-4 ml-lg-2"
         >
           <b-popover
             target="popover-target-2"
@@ -227,7 +227,7 @@
         <button
           id="popover-target-1"
           v-b-popover.hover.top
-          class="outline-none ml-3 ml-lg-4"
+          class="outline-none ml-sm-2 ml-xl-4 ml-lg-2"
         >
           <b-popover
             target="popover-target-1"
@@ -323,7 +323,7 @@
         </button>
       </div>
       <div
-        class="d-flex ml-2 justify-content-center text-white align-items-center text-left outline-none ml-0 ml-lg-5"
+        class="d-flex justify-content-center text-white align-items-center text-left outline-none ml-0 ml-lg-2 ml-xl-5"
       >
         <div class="bg-secondary rounded-circle">
           <svg
@@ -362,16 +362,16 @@
             </g>
           </svg>
         </div>
-        <div class="mx-2">
+        <div class="mx-sm-2">
           <p class="mb-0 text-dark fs-14">Hedi</p>
-          <p class="mb-0 fs-14 text-dark">
+          <p class="mb-0 fs-14 text-dark d-flex align-items-center">
             {{ $t("formHeaderAccountDetails") }}
 
             <b-dropdown
               variant="link"
               size="sm"
               dropleft
-              toggle-class="text-decoration-none p-0"
+              toggle-class="text-decoration-none p-0 outline-none mx-1"
               no-caret
             >
               <template #button-content>

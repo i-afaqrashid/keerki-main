@@ -382,12 +382,44 @@
         class="w-100 d-flex flex-column flex-lg-row justify-content-center mt-5 align-items-center font-weight-bolder"
         dir="ltr"
       >
+      <b-modal
+          id="reset-modal"
+          centered
+          hide-footer
+          header-class="header-class"
+          hide-header
+          hide-header-close
+        >
+          <div
+            class="d-flex flex-column w-100 justify-content-center align-items-center p-3"
+          >
+            <div class="w-100">
+              <h1 class="fs-16">{{ $t("resetForm") }}</h1>
+            </div>
+            <div class="d-flex justify-content-end w-100 mt-3">
+              <button
+                class="rounded-lg btn modal-logout bg-white color-c7 outline-none"
+                @click="$bvModal.hide('reset-modal')"
+              >
+                {{ $t("companyInfoReset") }}
+              </button>
+              <button
+                class="rounded-lg btn btn-primary outline-none ml-2"
+                @click="$bvModal.hide('reset-modal')"
+              >
+                {{ $t("continueSession") }}
+              </button>
+            </div>
+          </div>
+        </b-modal>
         <button
           class="btn btn-outline-secondary w-100 text-dark bg-white form-buttons"
           type="reset"
+          v-b-modal.reset-modal
         >
           {{ $t("companyInfoReset") }}
         </button>
+        //s
         <button
           class="btn btn-secondary w-100 text-dark ml-lg-4 mt-4 mt-lg-0 form-buttons"
           type="submit"
