@@ -211,7 +211,7 @@ export default {
       localStorage.email = this.email;
       localStorage.password = this.password;
       localStorage.newUser = true;
-      localStorage.currentLanguage = "en";
+      localStorage.currentLanguage = this.$i18n.locale;
 
       this.$router.push({ path: "dashboard" });
     },
