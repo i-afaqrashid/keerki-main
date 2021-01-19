@@ -123,6 +123,7 @@ export default {
       this.$router.push({ path: "/sign-up" });
     },
     handleLanguage(e) {
+      console.log("here");
       this.switchLocale(e.target.value);
     },
     switchLocale(locale) {
@@ -131,9 +132,10 @@ export default {
         document.getElementById("app").classList.remove(this.$i18n.locale);
         localStorage.currentLanguage = locale;
         document.getElementById("app").classList.add(locale);
+
+        location.reload();
       }
     },
   },
 };
-
 </script>

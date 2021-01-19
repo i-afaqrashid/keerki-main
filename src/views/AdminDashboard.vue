@@ -1102,6 +1102,7 @@ export default {
         localStorage.currentLanguage = locale;
         document.getElementById("app").classList.add(locale);
         this.$i18n.locale = locale;
+                location.reload();
       }
     },
 
