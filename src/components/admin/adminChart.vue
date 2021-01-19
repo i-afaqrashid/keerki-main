@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-9 w-95">
+  <div class="pt-9 w-95" dir="ltr">
     <div
       class="admin-chart d-flex flex-column flex-lg-row justify-content-around align-items-center"
     >

@@ -127,73 +127,13 @@ export default {
     },
     switchLocale(locale) {
       if (this.$i18n.locale !== locale) {
+        this.$i18n.locale = locale;
         document.getElementById("app").classList.remove(this.$i18n.locale);
         localStorage.currentLanguage = locale;
         document.getElementById("app").classList.add(locale);
-        this.$i18n.locale = locale;
       }
     },
   },
 };
 
-/*
-  <div class="w-100 d-flex justify-content-center align-items-center">
-    <b-navbar toggleable="lg" type="dark" variant="info" class="">
-      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-      <b-navbar-brand href="#" class="d-lg-none">
-        <img src="../assets/logo.png" width="100" />
-      </b-navbar-brand>
-
-      <b-collapse id="nav-collapse" is-nav>
-        <b-navbar-nav>
-          <b-nav-item href="#">
-            <b-button
-              @click="login"
-              class="py-2 btn-width-135"
-              squared
-              variant="secondary"
-              >{{ $t("login") }}</b-button
-            >
-          </b-nav-item>
-          <b-nav-item href="#">
-            <router-link to="/sign-up"
-              ><b-button
-                class="ml-lg-3 py-2 btn-width-135"
-                squared
-                variant="outline-light"
-                >{{ $t("signup") }}</b-button
-              ></router-link
-            >
-          </b-nav-item>
-      <b-navbar-nav class="mt-2">
-          <b-nav-item>
-            <p class="pl-lg-5">{{ $t("home") }}</p>
-          </b-nav-item>
-          <b-nav-item>
-            <p class="pl-lg-5">{{ $t("product") }}</p>
-          </b-nav-item>
-
-          <b-nav-item>
-            <p class="pl-lg-5">{{ $t("about") }}</p>
-          </b-nav-item>
-          <b-nav-item>
-            <p class="pl-lg-5">{{ $t("contact") }}</p>
-          </b-nav-item>
-          <b-nav-item-dropdown text="Lang" right>
-            <b-dropdown-item href="#">EN</b-dropdown-item>
-            <b-dropdown-item href="#">ES</b-dropdown-item>
-            <b-dropdown-item href="#">RU</b-dropdown-item>
-            <b-dropdown-item href="#">FA</b-dropdown-item>
-          </b-nav-item-dropdown>
-      </b-navbar-nav>
-        </b-navbar-nav>
-
-        <!-- Right aligned nav items -->
-        <b-navbar-nav class="ml-auto d-none d-lg-block ">
-            <img src="../assets/logo.png" class="w-50" />
-        </b-navbar-nav>
-      </b-collapse>
-    </b-navbar>
-  </div>
-**/
 </script>

@@ -84,7 +84,11 @@ const messages = {
         , issueHasBeenResolved: "Issue has been Resloved", requestRatingFromClient: "Request Rating From Client"
         , adminMessageDeletePopup: "Are you sure you want to delete this response",adminMessageDeleteNo:"No",adminMessageDeleteYes:"Yes",signupLoginNow:"Got an account? Login now",adminSettingsDepartment:"*Department",orderSearchByName:"Search by name",orderSearchByDate:"Search by Date",
         serviceHistory:"Service Orders History",quotesHistory:"Quote Orders History",shippingHistory:"Shipping Orders History",
-        adminOrdersEnquiry:"Your Enquiry here",intClient:"International Client",localClient:"Local Client",notifyAllClients:"Notify All Keerki Clients",notifyAllClientsSelected:"Notify All Clients",notifyNotifyAllClients:"All Clients",notifySelectedExcludedClient:"Selected excluded client name",notifyExcludedClientName:"Excluded Client Name",notifySendToAllClients:"Send to all clients a message",adminSettingsBalance:"Balance",adminSettingsBalancePlaceHolder:"Current Balance",adminSettingsAddress:"*Address",adminSettingsAddressPlaceHolder:"Address",adminSettingsPhone:"Phone",adminSettingsCompanyPlaceHolder:"Company Name",adminSettingsCompany:"*Company",adminSettingsMemberShip:"*Membership",adminSettingsRegisterClient:"Register a Client"
+        adminOrdersEnquiry:"Your Enquiry here",intClient:"International Client",localClient:"Local Client",notifyAllClients:"Notify All Keerki Clients",notifyAllClientsSelected:"Notify All Clients",notifyNotifyAllClients:"All Clients",notifySelectedExcludedClient:"Selected excluded client name",notifyExcludedClientName:"Excluded Client Name",notifySendToAllClients:"Send to all clients a message",adminSettingsBalance:"Balance",adminSettingsBalancePlaceHolder:"Current Balance",adminSettingsAddress:"*Address",adminSettingsAddressPlaceHolder:"Address",adminSettingsPhone:"Phone",adminSettingsCompanyPlaceHolder:"Company Name",adminSettingsCompany:"*Company",adminSettingsMemberShip:"*Membership",adminSettingsRegisterClient:"Register a Client",
+        Afghanistan:"Afghanistan",Albania:"Albania",Algeria:"Algeria",AmericanSamoa:"American Samoa",Andorra:"Andorra",Angola:"Angola",Anguilla:"Anguilla",Antarctica:"Antarctica",AntiguaBarbuda:"Antigua and Barbuda",Argentina:"Argentina",Armenia:"Armenia",Aruba:"Aruba",Australia:"Australia",Austria:"Austria",Azerbaijan:"Azerbaijan",Bahamas:"Bahamas",Bahrain:"Bahrain",Bangladesh:"Bangladesh",Barbados:"Barbados",Belarus:"Belarus",Belgium:"Belgium",Belize:"Belize",Benin:"Benin",Bermuda:"Bermuda",Bhutan:"Bhutan",Bolivia:"Bolivia",Bonaire:"Bonaire",Bosnia:"Bosnia",Botswana:"Botswana",Bouvet:"Bouvet",Brazil:"Brazil",BritishIndian:"BritishIndian",Brunei:"Brunei",Bulgaria:"Bulgaria",Burkina:"Burkina",
+        BurundiThe:"Burundi The",Burundi:"Burundi",Cambodia:"Cambodia",Cameroon:"Cameroon",Canada:"Canada",Cayman:"Cayman",Africa:"Africa",Chad:"Chad",Chile:"Chile",China:"China",Christmas:"Christmas",Cocos:"Cocos",Colombia:"Colombia",Comoros:"Comoros",Congo:"Congo",CongoThe:"Congo The",Cook:"Cook",Costa:"Costa Rica",Croatia:"Croatia",Cuba:"Cuba",Curaçao:"Curaçao",Cyprus:"Cyprus",Czechia:"Czechia",
+        Côte:"Côte De Ivora",CôteDE:"Côte",Djibouti:"Djibouti",Dominica:"Dominica",Dominican:"Dominican",Egypt:"Egypt",Salvador:"Salvador",Equatorial:"Equatorial",Eritrea:"Eritrea",Estonia:"Estonia",Eswatini:"Eswatini",Ethiopia:"Ethiopia",Falkland:"Falkland",Faroe:"Faroe",Fiji:"Fiji",
+        resetForm:"Reset the form?",updateData:"Update Data?"
     },
     'ar':
     {
@@ -130,7 +134,7 @@ const messages = {
         , newUserNext: "التالى", newUserPrev: "السابق", newUserDone: "منجز",
         notificationHeading: "إشعارات", notificationDescription: "إدارة الإخطارات الخاصة بك", messagesHeading: "الرسائل", messagesDescription: "إدارة رسائلك", orderHistoryHeading: "تاريخ الطلب", orderHistoryDescription: ".احصل على ملخص للمعاملات الأسبوعية عبر الإنترنت هنا", accountHeading: "الحساب", accountDescription: "تغيير تفاصيل حسابك", orderFormHeading: "نموذج الطلب", orderFormQuote: "اقتبس", orderFormService: "الخدمات", orderFormShipping: "الشحن",
         language: ":لغة", rtlHelper: "مرحبا", functionalityError: "الوظيفة غير متوفرة حاليًا", sorryText: "آسف للإزعاج", contentError: "المحتوى غير متوفر حاليا.", tryLater: "نحن آسفون؛ الرجاء معاودة المحاولة في وقت لاحق.", ok: "حسنا", selectLanguage: "يرجى تحديد لغة",
-        ksa: "المملكة العربية السعودية", uae: "United Arab Emirates", qatar: "الإمارات العربية المتحدة", bahrain: "البحرين", oman: "سلطنة عمان", lebanon: "لبنان", jordan: "الأردن", egypt: "مصر", germany: "ألمانيا", otherLanguages: "الآخرين",
+        ksa: "المملكة العربية السعودية", uae: "الإمارات العربية المتحدة", qatar: "الالمتحدة", bahrain: "البحرين", oman: "سلطنة عمان", lebanon: "لبنان", jordan: "الأردن", egypt: "مصر", germany: "ألمانيا", otherLanguages: "الآخرين",
         setLanguage: "لغة", shippingTo: "سافر على متن سفينة ل", serviceDetails: "تفاصيل الخدمة", factoryContact: "اتصالات المصنع", whatGoodsShipping: "ما هي البضائع التي تقوم بشحنها؟", entryFactoryContact: "أدخل جهة اتصال المصنع", listGoods: "قائمة بجميع البضائع الخاصة بك",
         providePackingList: "يرجى تقديم قائمة التعبئة أو تحميل ملف", height: "ارتفاع", width: "عرض", weightKG: "العرض بالكيلوغرام", uploadPackingList: "تحميل قائمة التعبئة", uploadInvoice: "تحميل الفاتورة", submit: "إرسال",
         messageReply: "الرد", openMessages: "افتح الرسائل", messagesOpen: "افتح", messagesClosed: "مغلق", messageSubject: "موضوع الرسالة", orderTypeNumber: "نوع الطلب - رقم الطلب",
@@ -167,8 +171,11 @@ const messages = {
         , adminMessageDeletePopup: "هل أنت متأكد أنك تريد حذف هذه الاستجابة"
         ,adminMessageDeleteNo:"لا",adminMessageDeleteYes:"نعم",signupLoginNow:"لديك حساب؟ تسجيل الدخول الآن",adminSettingsDepartment:"*قسم",
         orderSearchByName:"البحث عن طريق الإسم",orderSearchByDate:"البحث بالتاريخ",serviceHistory:"سجل أوامر الخدمة",quotesHistory:"تاريخ أوامر الاقتباس",shippingHistory:"سجل طلبات الشحن",adminOrdersEnquiry:"استفسارك هنا",
-        intClient:"العميل الدولي",localClient:"العميل المحلي"
-
+        intClient:"العميل الدولي",localClient:"العميل المحلي",
+        Afghanistan:"أفغانستان",Albania:"ألبانيا",Algeria:"الجزائر",AmericanSamoa:"ساموا الأمريكية",Andorra:"أندورا",Angola:"أنغولا",Anguilla:"أنغيلا",Antarctica:"القارة القطبية الجنوبية",AntiguaBarbuda:"أنتيغوا وبربودا",Argentina:"الأرجنتين",Armenia:"أرمينيا",Aruba:"أروبا",Australia:"أستراليا",Austria:"النمسا",Azerbaijan:"أذربيجان",Bahamas:"جزر البهاما",Bahrain:"البحرين",Bangladesh:"بنغلاديش",Barbados:"بربادوس",Belarus:"بيلاروسيا",Belgium:"بلجيكا",Belize:"بليز",Benin:"بنين",Bermuda:"برمودا",Bhutan:"بوتان",Bolivia:"بوليفيا",Bonaire:"بونير",Bosnia:"البوسنة",Botswana:"بوتسوانا",Bouvet:"بوفيت",Brazil:"البرازيل",BritishIndian:"هندي بريطاني",Brunei:"بروناي",Bulgaria:"بلغاريا",Burkina:"بوركينا",
+        BurundiThe:"بوروندي",Burundi:"بوروندي",Cambodia:"كمبوديا",Cameroon:"الكاميرون",Canada:"كندا",Cayman:"كايمان",Africa:"أفريقيا",Chad:"تشاد",Chile:"تشيلي",China:"الصين",Christmas:"عيد الميلاد",Cocos:"كوكوس",Colombia:"كولومبيا",Comoros:"جزر القمر",Congo:"الكونغو",CongoThe:"الكونغو",Cook:"يطبخ",Costa:"كوستا ريكا",Croatia:"كرواتيا",Cuba:"كوبا",Curaçao:"كوراساو",Cyprus:"قبرص",Czechia:"التشيك",
+        Côte:"كوت دي إيفورا",CôteDE:"كوت",Djibouti:"جيبوتي",Dominica:"دومينيكا",Dominican:"الدومينيكان",Egypt:"مصر",Salvador:"سلفادور",Equatorial:"الاستوائية",Eritrea:"إريتريا",Estonia:"إستونيا",Eswatini:"إيسواتيني",Ethiopia:"أثيوبيا",Falkland:"فوكلاند",Faroe:"فارو",Fiji:"فيجي"
+        ,resetForm:"إعادة تعيين النموذج؟",updateData:"تحديث البيانات؟"
 
 
     },
@@ -252,8 +259,11 @@ const messages = {
         , issueHasBeenResolved: "问题已解决", requestRatingFromClient: "要求客户评分"
         , adminMessageDeletePopup: "您确定要删除此回复吗"
         ,adminMessageDeleteNo:"没有",adminMessageDeleteYes:"是",signupLoginNow:"有帐号？现在登录",adminSettingsDepartment:"*部门",orderSearchByName:"依名称搜寻",orderSearchByDate:"按日期搜索",serviceHistory:"服务订单历史记录",quotesHistory:"报价单历史",shippingHistory:"装运订单历史记录",adminOrdersEnquiry:"您的询问在这里"
-        ,intClient:"国际客户",localClient:"本地客户"
-
+        ,intClient:"国际客户",localClient:"本地客户",
+        Afghanistan:"阿富汗",Albania:"阿尔巴尼亚",Algeria:"阿尔及利亚",AmericanSamoa:"美属萨摩亚",Andorra:"安道尔",Angola:"安哥拉",Anguilla:"安圭拉岛",Antarctica:"南极洲",AntiguaBarbuda:"安提瓜和巴布达",Argentina:"阿根廷",Armenia:"亚美尼亚",Aruba:"阿鲁巴岛",Australia:"澳大利亚",Austria:"奥地利",Azerbaijan:"阿塞拜疆",Bahamas:"巴哈马",Bahrain:"巴林",Bangladesh:"孟加拉国",Barbados:"巴巴多斯",Belarus:"白俄罗斯",Belgium:"比利时",Belize:"伯利兹",Benin:"贝宁",Bermuda:"百慕大",Bhutan:"不丹",Bolivia:"玻利维亚",Bonaire:"博内尔",Bosnia:"波斯尼亚和黑塞哥维那",Botswana:"博茨瓦纳",Bouvet:"布维",Brazil:"巴西",BritishIndian:"英属印度人",Brunei:"文莱",Bulgaria:"保加利亚",Burkina:"布基纳",
+        BurundiThe:"布隆迪",Burundi:"布隆迪",Cambodia:"柬埔寨",Cameroon:"喀麦隆",Canada:"加拿大",Cayman:"鳄鱼",Africa:"非洲",Chad:"乍得",Chile:"智利",China:"中国",Christmas:"圣诞",Cocos:"可可",Colombia:"哥伦比亚",Comoros:"科摩罗",Congo:"刚果",CongoThe:"刚果",Cook:"厨师",Costa:"哥斯达黎加",Croatia:"克罗地亚",Cuba:"古巴",Curaçao:"库拉索",Cyprus:"塞浦路斯",Czechia:"捷克语",
+        Côte:"埃武拉山",CôteDE:"埃武拉山",Djibouti:"吉布地",Dominica:"多米尼加",Dominican:"多米尼加",Egypt:"埃及",Salvador:"萨尔瓦多",Equatorial:"赤道",Eritrea:"厄立特里亚",Estonia:"爱沙尼亚",Eswatini:"埃斯瓦蒂尼",Ethiopia:"埃塞俄比亚",Falkland:"福克兰",Faroe:"法罗",Fiji:"斐济"
+        ,resetForm:"重置表格？",updateData:"更新数据？"
 
     }
 }
