@@ -6,7 +6,7 @@
     <div
       class="setting-cont w-100 py-4 d-flex justify-content-center align-items-center"
     >
-      <div class="w-75">
+      <div class="w-75"  dir="ltr">
         <div class="d-flex justify-content-center align-items-center w-75-resp">
           <div
             class="w-100 d-flex justify-content-around align-items-center flex-column flex-md-row"

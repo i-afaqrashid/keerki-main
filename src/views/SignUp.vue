@@ -79,20 +79,34 @@
                 <p class="mb-1">{{ $t("phone") }}</p>
 
                 <div class="d-flex w-100">
-                                  <b-dropdown
-                  :text="selected"
-                  toggle-class="catalog-input outline-none mr-3 bg-transparent select-width border d-flex justify-content-center align-items-center px-4"
-                  menu-class="h-select-200"
-                >
-                  <b-dropdown-item
-                    href="#"
-                    v-for="(options, index) in countryCodes"
-                    :key="options.value"
-                    @click="(e) => itemSelected(e, index)"
-                    >{{ options.value + " " + options.text }}</b-dropdown-item
+                  <b-dropdown
+                    v-if="this.$i18n.locale == 'ar'"
+                    :text="selected"
+                    toggle-class="catalog-input outline-none ml-3 bg-transparent select-width border d-flex justify-content-center align-items-center px-4"
+                    menu-class="h-select-200"
                   >
-                  
-                </b-dropdown>
+                    <b-dropdown-item
+                      href="#"
+                      v-for="(options, index) in countryCodes"
+                      :key="options.value"
+                      @click="(e) => itemSelected(e, index)"
+                      >{{ options.value + " " + options.text }}</b-dropdown-item
+                    >
+                  </b-dropdown>
+                  <b-dropdown
+                    v-else
+                    :text="selected"
+                    toggle-class="catalog-input outline-none mr-3 bg-transparent select-width border d-flex justify-content-center align-items-center px-4"
+                    menu-class="h-select-200"
+                  >
+                    <b-dropdown-item
+                      href="#"
+                      v-for="(options, index) in countryCodes"
+                      :key="options.value"
+                      @click="(e) => itemSelected(e, index)"
+                      >{{ options.value + " " + options.text }}</b-dropdown-item
+                    >
+                  </b-dropdown>
                   <b-form-group id="input-group-3" class="w-100 ml-1">
                     <input
                       id="input-3"
@@ -132,21 +146,19 @@
                     class="form-input outline-none border rounded-lg px-3"
                   />
                 </b-form-group>
-                <b-form-checkbox class="mb-2 mr-sm-2 mb-sm-0 ml-23 outline-none" required >
+                <b-form-checkbox
+                  class="mb-2 mr-sm-2 mb-sm-0 ml-23 outline-none"
+                  required
+                >
                   <button v-b-modal.terms-modal class="outline-none">
                     {{ $t("termsAndConditions") }}
                   </button>
                 </b-form-checkbox>
 
-                 <b-modal
-            id="terms-modal"
-            centered
-            hide-footer
-            no-stacking
-          >
-          <h1>Terms and Conditions</h1>
-          <h4>{{ $t("randomLarge") }}</h4>
-          </b-modal>
+                <b-modal id="terms-modal" centered hide-footer no-stacking>
+                  <h1>Terms and Conditions</h1>
+                  <h4>{{ $t("randomLarge") }}</h4>
+                </b-modal>
                 <b-button
                   size="lg"
                   class="w-100 border-0 bg-info mt-11 text-white ml-23 py-3 mb-5"
@@ -340,8 +352,6 @@ export default {
         { value: "+238", text: this.$t("Falkland") },
         { value: "+234", text: this.$t("Faroe") },
         { value: "+242", text: this.$t("Fiji") },
-       
-        
       ],
       selected: "+986",
     };

@@ -72,10 +72,19 @@
             type="password"
             required
           />
-
-
         </div>
-        <div class="w-300 ml-22">
+        <div v-if="this.$i18n.locale == 'ar'" class="w-300">
+          <button
+            class="btn w-100 login-input shadow-md btn-white btn-light mt-5"
+            type="submit"
+          >
+            {{ $t("loginBtn") }}
+          </button>
+          <p class="align-self-start fs-16 mb-0 text-white mt-13">
+            {{ $t("contactAdministrator") }}
+          </p>
+        </div>
+        <div v-else class="w-300 ml-22">
           <button
             class="btn w-100 login-input shadow-md btn-white btn-light mt-5"
             type="submit"
@@ -115,8 +124,8 @@ export default {
 };
 </script>
 <style scoped>
-.w-300{
-  width:300px;
+.w-300 {
+  width: 300px;
 }
 .login-bg {
   background-image: url("../../assets/adminBG.png");
